@@ -1,0 +1,304 @@
+{% load static %}
+
+body {
+  /*font-family: 'Roboto Condensed', sans-serif; */
+  font-family: 'PT Sans Narrow', sans-serif;
+  background-color: red;
+}
+
+html {
+  font-size: 1rem;
+}
+
+@include media-breakpoint-up(sm) {
+  html {
+    font-size: 1.2rem;
+  }
+}
+
+@include media-breakpoint-up(md) {
+  html {
+    font-size: 1.4rem;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  html {
+    font-size: 1.6rem;
+  }
+}
+
+
+/* Настройки панели навигации */
+.navbar-brand img {
+    width: 150px;
+}
+
+.navbar-nav li {
+    padding-right: 20px;
+}
+
+.nav-link {
+    font-size: 1.1em !important;
+}
+
+body { -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility;  letter-spacing: 0px; font-size: 17px; color: #8d8f90; font-weight: 400; line-height: 32px; background-color: #edefef; }
+h1, h2, h3, h4, h5, h6 { color: #25292a; margin: 0px 0px 10px 0px;  font-weight: 700; letter-spacing: -1px; line-height: 1; }
+
+p { margin: 0 0 20px; line-height: 1.7; }
+p:last-child { margin: 0px; }
+ul, ol { }
+a { text-decoration: none; color: #8d8f90; -webkit-transition: all 0.3s; -moz-transition: all 0.3s; transition: all 0.3s; }
+a:focus, a:hover { text-decoration: none; color: #f85759; }
+
+
+
+.page-header { position: relative; background-size: cover; }
+.page-caption { padding-top: 170px; padding-bottom: 174px; }
+.page-title { font-size: 46px; line-height: 1; color: #fff; font-weight: 600; text-align: center; }
+
+.card-section { position: relative; bottom: 60px; }
+.card-block { padding: 80px; }
+.section-title { margin-bottom: 60px; }
+
+
+
+/* Блок преимуществ */
+#columns-zzz {
+    border: 1px solid black;
+    box-shadow: 0 0 10px rgba(135, 214, 185, 1);
+}
+
+
+/* Галерея */
+/* Настройки карусели */
+.carousel-item img{
+    object-fit: cover;
+    width: 350px;
+    height: 750px;
+    transition: all .7s ease;
+}
+
+.carousel-item img:hover{
+      -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)"; /* IE 8 */
+      filter: alpha(opacity=30); /* IE7 */
+      opacity: 0.8;
+}
+
+.carousel-control-next-icon {
+    background-image: url();
+}
+
+.carousel-fade {
+    .carousel-inner {
+        .item {
+            transition-property: opacity;
+        }
+
+        .item,
+        .active.left,
+        .active.right {
+            opacity: 0;
+        }
+
+        .active,
+        .next.left,
+        .prev.right {
+            opacity: 1;
+        }
+
+        .next,
+        .prev,
+        .active.left,
+        .active.right {
+            left: 0;
+            transform: translate3d(0, 0, 0);
+        }
+    }
+
+    .carousel-control {
+        z-index: 2;
+    }
+}
+
+
+
+
+/* Настройка кнопки */
+#btn {
+  border: 2px solid gray;
+  border-radius: 10px;
+}
+
+#btn:hover{
+  background-color: #FF9140;
+  color: #87d6b9;
+  transition: all .7s ease;
+  border: 0px;
+}
+
+
+/*------------------------------
+  Form
+------------------------------*/
+.form-control {
+  border: 0;
+  border-bottom: 1px solid #a1a2a3;
+}
+
+.form-control,
+.form-control:focus,
+.form-control:focus:hover {
+  color: #ff8d00;
+  background: none;
+  outline: none;
+}
+
+.form-control:focus,
+.form-control:focus:hover {
+  border-bottom: 1px solid #ff8d00;
+}
+
+.contact-info{
+    margin-top:10%;
+  }
+.contact-info img{
+    margin-bottom: 15%;
+  }
+.contact-info h2{
+    margin-bottom: 10%;
+  }
+.col-md-9{
+    background: #fff;
+    padding: 3%;
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+  }
+.contact-form label{
+    font-weight:600;
+  }
+.contact-form button{
+    background: #25274d;
+    color: #fff;
+    font-weight: 600;
+    width: 25%;
+ }
+
+
+
+
+
+
+.myata {
+  /* color: #87d6b9; */
+  color: #00A287;
+}
+ .myata-bg {
+  /* background-color: #87d6b9; */
+  background-color: #00A287;
+ }
+
+
+
+
+
+
+/* Борты для преимуществ */
+.right {
+    border-right: 1px solid #ccc;
+}
+
+
+/* Настройки размера карусели с фотографиями*/
+.carousel-inner{
+    height: 750px;
+}
+
+/* Настройки изображения мастера*/
+#photo-about {
+	object-fit: cover;
+	max-width: 100%;
+	max-height: 100%;
+	box-shadow: 0 0 10px rgba(135, 214, 185, 1);
+}
+
+/* Настройки изображениq клиентов разделе отзывов*/
+#photo-clients {
+  object-fit: cover;
+  width: 250px;
+  height: 250px;
+  box-shadow: 0 0 10px rgba(135, 214, 185, 1);
+}
+
+
+/* Иконки социальных сетей */
+
+#social-icons a {
+  transition: all .5s ease;
+  padding-right: 40px;
+}
+
+#social-icons i:hover{
+  transition: all .5s ease;
+  color: #FF9140;
+  font-size: 40px;
+}
+
+#social-icons i{
+  color: #87d6b9;
+}
+
+#contact-icons i{
+  color: #87d6b9;
+}
+
+
+
+/* Настройки списка ошибок формы */
+.errorlist {
+    list-style: none;
+}
+
+.alert {
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    height: 30px;
+}
+
+
+div.scrollup {
+  vertical-align: middle;
+  position: fixed; /* фиксированная позиция */
+  color: white; /* цвет текста */
+ /* цвет заднего фона */
+  right: 20px; /* расстояние от правого края */
+  bottom: 0px; /* расстояние от нижнего края */
+  padding: 4px 10px; /* отступы до содержимого блока */
+  font-size: 30px; /* размер шрифта (иконки) */
+  border-radius: 50%;
+  /*border-top-left-radius: 4px;  скругление верхнего левого угла */
+  /*border-top-right-radius: 4px; скругление верхнего правого угла */
+  cursor: pointer; /* форма курсора */
+  display: none; /* не отображать элемент */
+  text-align: center; /*выравнивание содержимого элемента по центру */
+}
+div.scrollup:hover {
+  background-color: #436558; /* цвет заднего фона при наведении */
+  color: #87d6b9;
+}
+
+
+/* галерея */
+#part-gallery {
+    max-width: 400px;
+    margin:20px auto;
+}
+
+
+#gallery-photo {
+   width: 400px;
+   height: 400px;
+   padding: 10px auto;
+   object-fit: cover;
+}
