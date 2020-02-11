@@ -1,1 +1,0 @@
-https://fooobar.com/questions/922405/django-generate-download-link
